@@ -1,0 +1,65 @@
+#vinteAnos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.vinteTitulo{
+    font-family: principal;
+    font-size: 5rem;
+    color: var(--cor2);
+}
+.description{
+   color: var(--cor2);
+   font-size: 1.3rem;
+}
+.imgs20{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.imgs20 img{
+    width: 25%;
+    box-shadow: 0px 0px 12px black;
+    border-radius: 10%;
+}
+
+
+
+
+
+
+.carrossel {
+    width: 100%;
+}
+#logos{
+    overflow: hidden;
+    width: 900px;
+    margin: 0 auto;
+}
+
+#logos li{
+    list-style: none;
+}
+
+#logos ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    animation: slide 17s infinite linear;
+    width: max-content; 
+}
+#logos img{
+    width: 60px;
+}
+@keyframes slide {
+        0% {
+            transform: translateX(0); /* Começa na posição inicial */
+        }
+        100% {
+            transform: translateX(-50%); /* Move metade do conteúdo */
+        }
+}

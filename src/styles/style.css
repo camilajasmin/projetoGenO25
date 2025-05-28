@@ -1,0 +1,26 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap);
+@font-face {
+    font-family: 'principal';
+    src: url(../fontes/xanderespecial.ttf)
+}
+
+:root {
+    --cor1: #b8befa;
+    --cor2: #17142f;
+    --cor3: #ffe8db;
+    --cor4: #574f73;
+    --cor5: #ded3e3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Nunito Sans", sans-serif;
+    background-color: var(--cor1);
+    box-sizing: border-box;
+}
+section{
+    padding: 28px 8px;
+}
