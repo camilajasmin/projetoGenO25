@@ -1,28 +1,42 @@
 header{
     width: 100%;
     padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    background-color: var(--cor2);
+    z-index: 3;
 }
 #navbar{
     width: 100%;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--cor2);
+
 }
 #nav_list{
     display: flex;
     list-style: none;
     gap: 48px;
+    background-color: var(--cor2);
+
 }
 .nav-item a{
+    background-color: var(--cor2);
     text-decoration: none;
-    color: var(--cor2);
+    color: var(--cor1);
     font-weight: 600;
-    /* font-family: principal; */
 }
 .nav-item.active a{
-    border-bottom: 3px solid var(--cor2);
+    border-bottom: 3px solid var(--cor1);
+    border-radius: 0 0 3% 3%;
+   
 }
 #mobile_menu{
+    display: none;
+}
+#mobile_btn{
     display: none;
 }
 

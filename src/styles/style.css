@@ -21,6 +21,10 @@
     background-color: var(--cor1);
     box-sizing: border-box;
 }
+
+html{
+    scroll-behavior: smooth;
+}
 section{
     padding: 28px 8px;
 }
