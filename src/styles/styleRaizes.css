@@ -1,0 +1,97 @@
+#raizes{
+    margin-top: 50px;
+    
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding: 50px;
+    }
+#imgFolclore, #tituloRaizes{
+    width: 50%;
+    margin: 10px;
+}
+
+#tituloRaizes h2{
+   font-family: principal;
+   font-size: 8rem;
+}
+#imgFolclore{
+    display: flex;
+    justify-content: end;
+}
+
+#imgFolclore img{
+    width: 80%;
+    border-radius: 100px;
+    box-shadow: 0 0 5px 3px rgba(24, 8, 8, 0.5);
+
+}
+
+.cardResposta {
+    margin-top: 1px;
+    width: 500px;
+    height: 400px;
+    perspective: 1000px;
+     margin: 60px;
+}
+
+.classCard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+   
+}
+
+.cardResposta:hover .classCard {
+    transform: rotateY(180deg);
+}
+
+.card-Resposta-frente, .card-Resposta-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+.card-Resposta-back img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 0px;
+    border: 0px transparent var(--cor2);
+
+}
+
+.card-Resposta-back {
+    background-color: var(--cor2);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-Resposta-back p{
+    color: var(--cor1);
+    background-color: transparent;
+}
+
+.card-Resposta-frente h1 {
+    background-color: transparent;
+    color: var(--cor1);
+    font-family: principal;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+.card-Resposta-frente {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor2);
+}

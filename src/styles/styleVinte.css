@@ -1,19 +1,25 @@
-#vinteAnos{
+#vinteAnos, #secrespostas {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin: 20px 0 0 0;
+    padding-top: 20px ;
 }
 .vinteTitulo{
+    margin-top: 10px;
     font-family: principal;
     font-size: 5rem;
     color: var(--cor2);
 }
-.description{
+#vinteAnos h3{
    color: var(--cor2);
    font-size: 1.3rem;
+   margin-bottom: 10px;
+   text-align: center;
 }
+
 .imgs20 {
     display: flex;
     justify-content: center;
@@ -22,6 +28,7 @@
 }
 
 .card {
+    margin-top: 1px;
     width: 300px;
     height: 220px;
     perspective: 1000px;
@@ -43,16 +50,17 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 20px;
     backface-visibility: hidden;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 .card-front img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 00px;
+    border: 10px solid var(--cor2);
+
 }
 
 .card-back {
@@ -66,6 +74,8 @@
     gap: 10px;
     padding: 20px;
     text-align: center;
+    border-radius: 10px;
+
 }
 
 .card-back h3 {
@@ -89,7 +99,11 @@
 }
 
 .carrossel {
+    height: 100px;
     width: 100%;
+    display: flex;
+    text-align: center;
+    
 }
 #logos{
     overflow: hidden;
@@ -99,6 +113,9 @@
 
 #logos li{
     list-style: none;
+    display: flex;
+    text-align: center;
+    margin: auto;
 }
 
 #logos ul{
@@ -110,6 +127,10 @@
 }
 #logos img{
     width: 60px;
+    margin: auto;
+}
+#imagensVinte {
+    margin-top: -10px;
 }
 @keyframes slide {
         0% {

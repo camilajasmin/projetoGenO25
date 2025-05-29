@@ -21,7 +21,7 @@ $(document).ready(function(){
 
         sections.each(function(i){
             const section = $(this);
-            const sectionTop = section.offset().top - 96;
+            const sectionTop = section.offset().top - 140;
             const sectionBottom = sectionTop + section.outerHeight();
 
             if(scrollPosition >= sectionTop && scrollPosition < sectionBottom){
@@ -48,7 +48,12 @@ $(document).ready(function(){
         duration: 3000,
         distance:'40%'
     })
-    ScrollReveal().reveal('#img201', {
+    ScrollReveal().reveal('.card-back',{
+        origin: 'right',
+        duration: 3000,
+        distance:'40%'
+    })
+     ScrollReveal().reveal('#img201',{
         origin: 'right',
         duration: 3000,
         distance:'40%'
@@ -65,6 +70,16 @@ $(document).ready(function(){
     })
     ScrollReveal().reveal('.carrossel', {
         origin: 'bottom',
+        duration: 3000,
+        distance:'40%'
+    })
+     ScrollReveal().reveal('#imgFolclore', {
+        origin: 'bottom',
+        duration: 3000,
+        distance:'40%'
+    })
+      ScrollReveal().reveal('#tituloRaizes', {
+        origin: 'right',
         duration: 3000,
         distance:'40%'
     })

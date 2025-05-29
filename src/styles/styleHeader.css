@@ -1,6 +1,7 @@
 header{
     width: 100%;
     padding: 20px 8%;
+    border: 10px solid var(--cor2);
     position: sticky;
     top: 0;
     background-color: var(--cor2);

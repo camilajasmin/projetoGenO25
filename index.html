@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="src/styles/style.css">
     <link rel="stylesheet" href="src/styles/styleVinte.css">
     <link rel="stylesheet" href="src/styles/styleHome.css">
+    <link rel="stylesheet" href="src/styles/styleRaizes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -18,8 +20,8 @@
         <nav id="navbar">
             <ul id="nav_list">
                 <li class="nav-item active"><a href="">Essa sou eu</a></li>
-                <li class="nav-item"><a href="">Vinte anos</a></li>
-                <li class="nav-item"><a href="">Raízes</a></li>
+                <li class="nav-item"><a href="#vinteAnos">Vinte anos</a></li>
+                <li class="nav-item"><a href="#raizes">Raízes</a></li>
                 <li class="nav-item"><a href="">Dinâmica</a></li>
             </ul>
             <button id="mobile_btn">
@@ -56,6 +58,8 @@
 
         <section id="vinteAnos">
             <h2 class="vinteTitulo">Aos 20 anos...</h2>
+            <h3>Cursando Ciência da Computação - Técnica em Informática e Redes de Computadores - Estágiária</h3>
+
             <!-- <h3 class="description">Tudo o que eu realizei até hoje.</h3> -->
             <div class="carrossel" id="imgc">
                 <div id="logos">
@@ -93,14 +97,30 @@
     <div class="card">
         <div class="card-inner">
             <div class="card-front">
-                <img src="src/imagens/senac1.jpg" alt="">
+                <img src="src/imagens/senac1.jpg" id="img201" alt="">
             </div>
             <div class="card-back">
-                <h3>Soft Skills</h3>
+                <h3></h3>
                 <ul>
-                    <li>Comunicação</li>
-                    <li>Trabalho em equipe</li>
-                    <li>Empatia</li>
+                    <li> Comunicação clara</li>
+                    <li> Trabalho em equipe</li>
+                    <li> Foco nos detalhes</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner" id="card1">
+            <div class="card-front" >
+                <img src="src/imagens/senac2.jpg" id="img202" alt="">
+            </div>
+            <div class="card-back" id="c1">
+            
+                <ul>
+                    <li> Montagem e manutenção de PCs</li>
+                    <li> Formatação e instalação de sistemas</li>
+                    <li> Configuração de redes simples</li>
                 </ul>
             </div>
         </div>
@@ -109,30 +129,13 @@
     <div class="card">
         <div class="card-inner">
             <div class="card-front">
-                <img src="src/imagens/senac2.jpg" alt="">
+                <img src="src/imagens/senac3.jpg" id="img203" alt="">
             </div>
             <div class="card-back">
-                <h3>Soft Skills</h3>
-                <ul>
-                    <li>Resiliência</li>
-                    <li>Organização</li>
-                    <li>Proatividade</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-inner">
-            <div class="card-front">
-                <img src="src/imagens/senac3.jpg" alt="">
-            </div>
-            <div class="card-back">
-                <h3>Soft Skills</h3>
                 <ul>
                     <li>Criatividade</li>
                     <li>Adaptabilidade</li>
-                    <li>Resolução de problemas</li>
+                    <li>Flexível</li>
                 </ul>
             </div>
         </div>
@@ -141,8 +144,34 @@
 
             </div>   
         </section>
-        <section id="raizes"></section>
-        <section id="dinamica"></section>
+        <section id="raizes">
+            <div id="imgFolclore">
+                <img src="src/imagens/carnaval.jpg" alt="">
+            </div>
+            <div id="tituloRaizes">
+                <h2 class="tituloRaiz">Raízes</h2>
+                <h3>Minhas raízes vão além da tecnologia. Carrego comigo a força da minha cultura, da dança folclórica e da minha história. <br> </h3>
+            </div>
+        </section>
+        <section id="secrespostas">
+        <div class="cardResposta">
+        <div class="classCard" >
+            <div class="card-Resposta-frente" >
+                <h1>Minha Resposta</h1>
+            </div>
+            <div class="card-Resposta-back" >
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/L80385-flash-superhero-logo-1544.png" id="img202" alt="">
+                <p>Supervelocidade + inteligência = organização, agilidade e resolução de problemas.</p>
+                <!-- <ul>
+                    <li> Montagem e manutenção de PCs</li>
+                    <li> Formatação e instalação de sistemas</li>
+                    <li> Configuração de redes simples</li>
+                </ul> -->
+            </div>
+        </div>
+    </div>
+
+        </section>
     </main>
     <script src="src/javascript/script.js"></script>
 </body>
