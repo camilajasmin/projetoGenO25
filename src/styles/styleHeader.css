@@ -36,9 +36,12 @@ header{
 }
 #mobile_menu{
     display: none;
+    background-color: transparent;
+
 }
 #mobile_btn{
     display: none;
+    background-color: transparent;
 }
 
 @media screen and (max-width:1100px) {
@@ -54,16 +57,21 @@ header{
     }
     #mobile_menu.active{
         display: block;
+        background-color: transparent;
+
     }
     #mobilenav_list{
         text-decoration: none;
         display: flex;
         flex-direction: column;
         gap: 12px;
-        margin:12px 0px
+        margin:12px 0px;
+        background-color: transparent;
     }
     #mobilenav_list .nav-item{
         list-style: none;
         text-align: center;
+        background-color: transparent;
+
     }
 }

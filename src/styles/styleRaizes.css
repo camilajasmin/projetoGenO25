@@ -10,7 +10,9 @@
     width: 50%;
     margin: 10px;
 }
-
+.tituloRaiz, #tituloRaizes h3{
+    color: var(--cor2);
+}
 #tituloRaizes h2{
    font-family: principal;
    font-size: 8rem;
@@ -21,8 +23,8 @@
 }
 
 #imgFolclore img{
-    width: 80%;
-    border-radius: 100px;
+    width: 70%;
+    border-radius: 30px;
     box-shadow: 0 0 5px 3px rgba(24, 8, 8, 0.5);
 
 }
@@ -94,4 +96,49 @@
     align-items: center;
     justify-content: center;
     background-color: var(--cor2);
+}
+
+@media screen and (max-width:1130px){
+   #tituloRaizes h2{
+   font-size: 6rem;
+}
+    #tituloRaizes h3{
+        font-size: 1rem;
+        width: 80%;
+    }
+}
+@media screen and (max-width:1000px){
+    #raizes{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    #tituloRaizes{
+   font-size: 7rem;
+   text-align: center;
+}
+    #tituloRaizes h3{
+        font-size: 1rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+    #imgFolclore img{
+        margin-top: 20px;
+    }
+#imgFolclore, #tituloRaizes{
+    margin: 0 auto;
+    justify-content: center;
+}
+
+}
+@media screen and (max-width:700px){
+    #imgFolclore{
+        width: 80%;
+    }
+    #tituloRaizes{
+        margin: 0 auto;
+        width: auto;
+        text-align: center;
+        justify-content: center;
+    }
 }
